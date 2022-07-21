@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav{
+    background-color: white;
+}
+
+.container {
+    width: 320px;;
+    height: 8000px;
+    display:flex;
+    
+    
+}
+
+.icon {
+
+}
+
+.main {
+    background-color: white;
+
+}
+
+.main__slogan {
+    font-size: 15px;
+    color:gray;
+    align-content: center;
+
+}
