@@ -7,91 +7,159 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
-  <body class="container">
+  <body>
 
-    <nav class="icon">
-      <img class="icon__pazioli" src="" alt="" />
-      <img class="icon__carrito" src="" alt="" />
+      <!-- Sección de cin -->
+    <nav class="nav">
+      <img class="pazioli" src="" alt="" />
+      <img class="nav__carrito" src="" alt="" />
     </nav>
-    <main class="main">
-    <p class="main__slogan">Él arte de tocar piano</p>    
-    <h1 class="main__title">Instituto Pazioli</h1>
-    <button class="button button--black">Ver cursos</button>
-    <button class="button button--white">Adquirir piano</button>
-    <img class="main__piano" src="" alt="" />
-    </main>
 
-    <article class="article">
-        <h2 class="article__title article__title--black">Conoce nuestro nuevo modelo en clase</h2>
-        <img class="article__img" src="" alt="" />
-        <h2 class="article__title  article__title--white">Nuevo Ebony</h2>
-        <p class="article__text article__text--bold-white">
-          Valoración:
-          <img class="article__valoracion--stars" src="" alt="" >
-        </p>
-      <h2 class="article__title  article__title--white">Desde: $110,000.00</h2>
-      <p class="article__text article__text-white ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quo praesentium temporibus eos eius aut odio veritatis at ut, accusantium culpa quasi quidem repudiandae voluptatibus similique amet facilis commodi dicta?</p>
-      <p class="article__text article__text--bold-white">Nuevo · 2021 · Actús... · M.Cedro</p> 
-      <button class="button button--black">Agregar al carrito</button>
-    </article>
-
-    <!-- En las 3 cards lo único que cambia es la imagen y el precio por lo tanto podemos usar las mismas clases -->
-    <article class="card">
-      <h2 class="article__title article__title--black">¿Qué tipo de piano estás buscando?</h2>
-      <img class="card" src="" alt="" />
-      <h3 class="card__title">The Butterfly</h3>
-      <p class="article__text article__text--bold-black">Nuevo · 2021 · Actús... · M.Cedro</p> 
-      <button class="button button--black">Desde</button><!-- No super como poner dif estilos de texto en un mismo boton >=|  -->
-      <img class="card__icon" src="" alt="" />
-    </article>
-
-    <article class="card">
-      <h2 class="article__title article__title--black">¿Qué tipo de piano estás buscando?</h2>
-      <img class="card" src="" alt="" />
-      <h3 class="card__title">The Butterfly</h3>
-      <p class="article__text article__text--bold-black">Nuevo · 2021 · Actús... · M.Cedro</p> 
-      <button class="button button--black">Desde</button><!-- No super como poner dif estilos de texto en un mismo boton >=|  -->
-      <img class="card__icon" src="" alt="" />
-    </article>
-
-    <article class="card">
-      <h2 class="article__title article__title--black">¿Qué tipo de piano estás buscando?</h2>
-      <img class="card" src="" alt="" />
-      <h3 class="card__title">The Butterfly</h3>
-      <p class="article__text article__text--bold-black">Nuevo · 2021 · Actús... · M.Cedro</p> 
-      <button class="button button--black">Desde</button><!-- No super como poner dif estilos de texto en un mismo boton >=|  -->
-      <img class="card__icon" src="" alt="" />
-    </article>
-
-    <button class="button button--black">Ver más</button> <!-- Miso botón de arriba por lo tanto mismo modificador -->
-    
-    <section class="contact"> <!-- en CSS se tendrían que comportar como bloque aqui aparecen como línea -->
-      <h2 class="article__title article__title--black">Contáctanos</h2>
-      <p class="article__text article__text-black ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quo praesentium temporibus eos eius aut odio veritatis at ut, accusantium culpa quasi quidem repudiandae voluptatibus similique amet facilis commodi dicta?</p>
-      <label class="contact__input" for="">Nombre</label>
-      <input type="name" name="" id="">
-      <label class="contact__input" for="">Teléfono</label>
-      <input type="tel" name="" id="">
-      <label class="contact__input" for="">Email</label>
-      <input type="email" name="" id="">
-      <label class="contact__input" for="message">Cuéntanos más</label><br />
-        <textarea
-          id="message"
-          cols="80"
-          rows="8"
-          required
-          placeholder=
-        ></textarea>
-      <input type="submit" value="Enviar solicitud" />
-    </form>
+    <section class="main">
+      <p class="main__slogan">Él arte de tocar piano</p>    
+      <h1 class="main__title">Instituto Pazioli</h1>
+      <button class="button button--black">Ver cursos</button>
+      <button class="button button--white">Adquirir piano</button>
+      <img class="main__piano" src="" alt="" />
     </section>
 
+    <!-- Sección de héctor -->
+    <section class="newmodel">
+        <h2 class="title title--black">Conoce nuestro nuevo modelo en clase</h2>
+        <img class="newmodel__img" src="" alt="" />
+        <h2 class="title title--white">Nuevo Ebony</h2>
+        <p class="newmodel__rate">
+          Valoración:
+        </p>
+        <img class="newmodel__stars" src="" alt="" >
+      <h2 class="title title--white">Desde: $110,000.00</h2>
+      <p class="text text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quo praesentium temporibus eos eius aut odio veritatis at ut, accusantium culpa quasi quidem repudiandae voluptatibus similique amet facilis commodi dicta?</p>
+      <p class="description description--white">Nuevo · 2021 · Actús... · M.Cedro</p> 
+      <button class="button button--black">Agregar al carrito</button>
+      </section>
+
+    <!-- Sección de rodri -->
+    <section class="gallery">
+
+      <h2 class="title title--black">¿Qué tipo de piano estás buscando?</h2>
+      
+      <article class="card">
+        <img class="card__img" src="" alt="" />
+        <h3 class="card__title">The Butterfly</h3>
+        <p class="description description--black">Nuevo · 2021 · Actús... · M.Cedro</p> 
+        <button class="button button--black">Desde: $ 195k mn</button>
+        <button class="button card__button">
+          <img class="card__icon" src="" alt="" />
+        </button>
+      </article>
+
+      <article class="card">
+        <img class="card__img" src="" alt="" />
+        <h3 class="card__title">Golden Leaf</h3>
+        <p class="description description--black">Nuevo · 2021 · Actús... · M.Cedro</p> 
+        <button class="button button--black">Desde: $ 305k mn</button>
+        <button class="button card__button">
+          <img class="card__icon" src="" alt="" />
+        </button>
+      </article>
+  
+      <article class="card">
+        <img class="card__img" src="" alt="" />
+        <h3 class="card__title">Walnut Stauss</h3>
+        <p class="description description--black">Nuevo · 2021 · Actús... · M.Cedro</p> 
+        <button class="button button--black">Desde: $ 125k mn</button>
+        <button class="button card__button">
+          <img class="card__icon" src="" alt="" />
+        </button>
+      </article>
+
+      <button class="button button--black">Ver más</button>
+    </section>    
+
+      <!-- Sección de cin -->
+    <section class="contact"> 
+      <h2 class="title title--black">Contáctanos</h2>
+      <p class="text text--black ">¿Quieres educarte formalmente en este instrumento? Toca más rápido, logra mayor fluidez en las composiciones complejas. Contactános para conocer tus objetivos.</p>
+      
+      <form class="form" action="">
+        <label class="form__input" for="">Nombre</label>
+        <input type="name" name="" id="">
+        <label class="form__input" for="">Teléfono</label>
+        <input type="tel" name="" id="">
+        <label class="form__input" for="">Email</label>
+        <input type="email" name="" id="">
+        <label class="form__input" for="message">Cuéntanos más</label><br />
+          <textarea class="form_textarea"
+            id="message"
+            cols="80"
+            rows="8"
+            required
+            placeholder=
+          ></textarea>
+        <input type="submit" value="Enviar solicitud" />
+      </form>
 
 
+    </section>
 
+      <!-- Sección de annie -->
+    <section class="partners">
+      <h2 class="title title--black">
+        Conoce a nuestros partners. 
+      </h2>
 
+      <div class="div">
+        <img class="div__img" src="" alt="">
+        <h3 class="div__title">
+          Petrov
+        </h3>
+      </div>
 
+      <div class="div">
+        <img class="div__img" src="" alt="">
+        <h3 class="div__title">
+          BookPa
+        </h3>
+      </div>
 
+      <div class="div">
+        <img class="div__img" src="" alt="">
+        <h3 class="div__title">
+          Petrov
+        </h3>
+      </div>
+    </section>
+
+    <!-- Sección de annie -->
+    <footer class="footer">
+      <img class="pazioli" src="" alt="">
+      <section class="icons">
+      <img class="icons__img" src="" alt="">
+      <img class="icons__img" src="" alt="">
+      <img class="icons__img" src="" alt="">
+      </section>
+
+      <h4 class="footer__header">
+        Nosotros
+      </h4>
+
+      <ul class="footer__list">
+        <li><a href="">Home</a></li>
+        <li><a href="">Nuevo</a></li>
+        <li><a href="">Pianos</a></li>
+        <li><a href="">Conoce nuestros cursos</a></li>
+      </ul>
+
+      <h4 class="footer__header">
+        Contáctanos
+      </h4>
+
+      <p class="footer__address">México
+        Tonalá 10, Roma Nte., Cuauhtémoc, 03800 Ciudad de México, CDMX.</p>
+      <p class="footer__copyright">© Pazioli 2021, todos los derechos reservados.</p>
+      <p class="footer__powered">Powered with ♥ by
+        DevKoore</p>
+    </footer>
 
   </body>
 </html>
