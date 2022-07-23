@@ -70,6 +70,7 @@
             margin-top: 10px;
             margin-bottom: 15px;
             display: flex;
+            flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-around;
             padding-right: 5px;
@@ -107,6 +108,7 @@
             transition: 0.3s;
             .button--bold-text{
                 background-color: white;
+                box-shadow: none;
             }
         }
         .button--white:active{
@@ -127,6 +129,7 @@
         border: 0;
         padding: 10px 50px;
         font-weight: 700;
+        transition: 0.3s;
     }
 
     .button:hover{
@@ -153,17 +156,17 @@
             font-weight: 400;
             margin-left: 20%;
             margin-right: 20%;
+            margin-bottom: 60px;
         }
 
         .gallery__container{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
 
             .button--white{
                 font-size: 1.25rem;
                 width: 70%;
-                height: 100%;
+                height: 45px;
                 flex-grow: 3;
                 border: black;
                 border: 1px;
@@ -171,6 +174,7 @@
                 border-radius: 10px;
                 background-color: white;
                 margin-right: 20px;
+                transition: 0.3s;
             }
         }
         .card{
@@ -179,7 +183,14 @@
             margin-top: 135px;
             margin-left: 50px;
             margin-right: 50px;
+            transition: 0.3s;
         }
+
+        .card:hover{
+            transform: scale(1.04);
+            transition: 0.3s;
+        }
+        
         .card__img{
 
             position: relative;
