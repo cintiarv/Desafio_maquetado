@@ -1,5 +1,10 @@
+@use "variables.scss";
+@use "nav.scss";
+@use "new-model.scss";
 @use "gallery.scss";
-
+@use "contact.scss";
+@use "partners.scss";
+@use "footer.scss";
 
 .title--black{
     font-family: 'Abril Fatface', cursive;
