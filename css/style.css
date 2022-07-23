@@ -1,0 +1,57 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  background-color: whitesmoke;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+.card .card__img {
+  margin: 10px;
+  width: 80%;
+  height: 100%;
+}
+.card .card__separator {
+  max-width: 100%;
+  height: auto;
+}
+.card .card__title {
+  font-family: "Abril Fatface", cursive;
+}
+.card .description--black {
+  font-family: "Raleway", sans-serif;
+}
+.card .buttons {
+  display: flex;
+}
+.card .button--white {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  flex-grow: 2;
+  border: black;
+  border: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: white;
+}
+.button--black {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  border-radius: 10px;
+  border: 0;
+  padding: 5px;
+}
+
+.title--black {
+  font-family: "Abril Fatface", cursive;
+}/*# sourceMappingURL=style.css.map */
