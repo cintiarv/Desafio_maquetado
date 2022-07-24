@@ -4,4 +4,120 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);    
+    
+    .title--black{
+    margin: 20px;
+    text-align: center;
+    font-size: 32px;
+    }
+
+    .new-model__video{
+        object-fit: cover;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        -webkit-filter: blur(1px) opacity(10%);
+        
+    }
+
+    .new-model__background{
+        width: 600px;
+        height: 420px;
+        position: absolute;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .new-model__img{
+        // position: relative;
+        // top: -400px;
+        width: 90%;
+    }
+
+    .title--ebony{
+        color: white;
+        // position: relative;
+        // top: -380px;
+        font-weight: 700;
+        font-size: 32px;
+    }
+    
+    .new-model__stars{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        // position: relative;
+        // top: -350px;
+    }
+
+    .new-model__rate{
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        font-weight: 700;
+        margin: 10px;
+
+    }
+
+    .new-model__stars-icon{
+        margin: 10px;
+        width: 150px;
+    }
+
+    .title--price{
+        color: white;
+        // position: relative;
+        // top: -320px;
+        letter-spacing: 5%;
+        font-weight: 700;
+        font-size: 32px;
+    }
+    
+    .text--white{
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        color: white;
+        // position: relative;
+        // top: -300px;
+        font-weight: lighter;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .list{
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        padding: 3px;
+        // position: relative;
+        // top: -150px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .button--black{
+        background-color: black;
+        // position: relative;
+        // top: -280px;
+        color: white;
+        font-size: 16px;
+        font-family: 'Raleway', sans-serif;
+        border-radius: 10px;
+        border: 0;
+        padding: 10px 50px;
+        font-weight: 700;
+        transition: 0.3s;
+        margin-bottom: 35px;
+    }
+
 }

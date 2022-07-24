@@ -1,1 +1,91 @@
 @use "variables";
+
+.contact{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+    .contact__background{
+        opacity: 0.3;
+        position: absolute;
+        z-index: -1;
+        background: white;
+        background: linear-gradient(180deg, rgba(255,255,255,100) 0%, rgba(255,255,255,0.35) 100%);
+
+    }
+    .contact__image{
+        width: auto;
+        height: auto;
+        justify-content: center;
+    }
+
+    .title--black{
+        font-size: 32px;
+        text-align: center;
+        font-weight: 400;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .text--black{
+        margin: 30px;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        // flex-wrap: wrap;
+        justify-content: flex-start;
+        .form__input{
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            margin: 10px;
+        }
+        .textarea{
+            margin: 10px;
+            height: 40px;
+            background-color: hsla(0, 0%, 0%, 0.75);
+            border-radius: 5px;
+            border-style: solid;
+            border-color: white;
+        }
+        .textarea--big{
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 150px;
+            background-color: hsla(0, 0%, 0%, 0.75);
+            border-radius: 5px;
+            border-style: solid;
+            border-color: white;
+        }
+
+        .button--black{
+            background-color: black;
+            margin: 30px;
+            color: white;
+            font-size: 16px;
+            font-family: 'Raleway', sans-serif;
+            border-radius: 10px;
+            border: 0;
+            padding: 10px 50px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+    }
+}
+
+.contact::after{
+    content: "";
+    
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
