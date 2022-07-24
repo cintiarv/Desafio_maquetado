@@ -84,7 +84,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  padding-right: 5px;
+  padding-right: 0px;
 }
 .gallery .card .button--white {
   font-size: 1.2rem;
@@ -158,6 +158,7 @@
   .gallery .gallery__container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
   .gallery .gallery__container .button--white {
     font-size: 1.25rem;
@@ -173,7 +174,7 @@
     transition: 0.3s;
   }
   .gallery .card {
-    width: 280px;
+    width: 310px;
     height: auto;
     margin-top: 135px;
     margin-left: 50px;

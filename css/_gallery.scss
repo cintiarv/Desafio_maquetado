@@ -73,7 +73,7 @@
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-around;
-            padding-right: 5px;
+            padding-right: 0px;
         }
     
         .button--white{
@@ -162,6 +162,7 @@
         .gallery__container{
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
 
             .button--white{
                 font-size: 1.25rem;
@@ -178,7 +179,7 @@
             }
         }
         .card{
-            width: 280px;
+            width: 310px;
             height: auto;
             margin-top: 135px;
             margin-left: 50px;
