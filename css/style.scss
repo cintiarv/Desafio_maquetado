@@ -6,6 +6,11 @@
 @use "partners.scss";
 @use "footer.scss";
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
 .title--black{
     font-family: 'Abril Fatface', cursive;
 }
