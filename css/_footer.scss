@@ -1,1 +1,49 @@
 @use "variables";
+
+.footer {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Raleway';
+    background: linear-gradient(180deg, rgba(214,214,214,1) 0%, rgba(255,255,255,0.43) 100%);
+    width: 100%;
+
+    .footer__icons_img {
+    background: llinear-gradient(177.96deg, rgba(255, 255, 255, 0.43) 1.72%, #6F6F6F 107.44%);
+    scale: 500px;
+    }
+
+    .footer__header {
+        font-size: 20px;
+        font-family: Abril Fatface;
+    }
+
+    .footer__list {
+        font-family: 'Raleway';
+        font-size: 15px;
+        list-style-type: none;
+    }
+
+    .footer__anchor {
+        text-decoration: none;
+        color: black
+    }
+        
+
+    .footer__address {
+        font-style: bold;
+        font-size: 15px;
+    }
+    
+    .footer__copyright {
+        font-size: 14px;
+        margin-top: 50px;
+    }
+
+    .dev {
+        font-weight: bold;
+    }
+
+    
+}
