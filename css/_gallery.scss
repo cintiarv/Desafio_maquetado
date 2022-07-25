@@ -1,4 +1,4 @@
-@use "variables.scss";
+@use "variables";
 
 .gallery{
     display: flex ;
@@ -134,6 +134,7 @@
     .button:hover{
         transition: 0.3s;
         background-color: hsla(0, 0%, 0%, 0.75);
+
     }
 
     .button:active{
@@ -145,7 +146,7 @@
 }
 
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 1024px) {
 
     .gallery{
         flex-direction: column;
@@ -192,8 +193,11 @@
         }
         
         .card__img{
+
             position: relative;
             left: 20px;
+
+
             bottom: 135px;
         }
 
@@ -210,4 +214,6 @@
             margin-top: 100px;
         }
     }
+
 }   
+
