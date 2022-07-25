@@ -1,8 +1,10 @@
+
 @use "variables.scss";
-@use "nav.scss";
+@use 'nav';
+
 @use "new-model.scss";
 @use "gallery.scss";
-@use "contact.scss";
+@use 'contact';
 @use "partners.scss";
 @use "footer.scss";
 
