@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+}
+.nav {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 30px;
+  height: 80px;
+
+  &__cart {
+    margin-right: 0px;
+    position: relative;
+    bottom: 20px;
+    width: 90px;
+    height: 90px;
+  }
+
+  /* &__list {
+    display: none;
+  } */
+}
+
+.header {
+  background-color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px;
+  position: relative;
+
+  &__slogan {
+    color: #858585;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+  }
+  &__title {
+    font-size: 32px;
+    padding: 15px;
+    font-family: "Abril Fatface", arial;
+    font-weight: lighter;
+  }
+
+  .button {
+    width: 129px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: "poppins";
+    font-weight: 600;
+  }
+  .button--white {
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
+  }
+  .button--white:hover{
+    background-color: black ;
+  }
+
+
+  
+
+  .button--black {
+    background-color: black;
+    color: white;
+  }
+
+  .button__black--nav {
+    margin:0;
+  }
+
+  &__piano {
+    width: 252px;
+    height: 194px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.nav__list-item{
+    margin: 0
+}
+@media (min-width: 960px) {
+  .nav {
+    margin-top: 0px 0px;
+
+    &__cart {
+      width: 120px;
+      height: 120px;
+    }
+
+    section{
+        width:300px;
+    }
+
+    &__list {
+       display: flex; 
+      list-style-type: none;
+      flex-flow: row wrap;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      font-family: "Raleway", sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+
+      .button {
+        width: 129px;
+        height: 30px;
+        border-radius: 10px;
+        font-weight: 600;
+      }
+    }
+    &__link {
+      text-decoration: none;
+    }
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__title {
+      font-size: 56px;
+      padding: 15px;
+      font-family: "Abril Fatface", arial;
+      font-weight: 400;
+    }
+
+    &__piano {
+      text-align: center;
+      width: 589px;
+      height: 454px;
+      margin-top: 40px;
+    }
+  }
+}
+
+
+@media (max-width: 959px) {
+    .nav {
+        &__list {
+            display: none;
+        }
+    }
+    .contact .form__input {
+        width: 100% !important;
+    }
+    
+    form .div__container{
+        flex-direction: column !important;
+    }
+
+}
+
+form .div__container{
+    flex-direction: row;
+}
+
+form .div__container--big{
+    width: 100%
+}
+
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+.nav__link{
+    margin: 0 20px;
+}

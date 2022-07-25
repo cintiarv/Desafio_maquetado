@@ -1,36 +1,293 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    font-size: 15px;
-    align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+}
+
+.nav {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 30px;
+  height: 80px;
+  /* &__list {
+    display: none;
+  } */
+}
+.nav__cart {
+  margin-right: 0px;
+  position: relative;
+  bottom: 20px;
+  width: 90px;
+  height: 90px;
+}
+
+.header {
+  background-color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px;
+  position: relative;
+}
+.header__slogan {
+  color: #858585;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+.header__title {
+  font-size: 32px;
+  padding: 15px;
+  font-family: "Abril Fatface", arial;
+  font-weight: lighter;
+}
+.header .button {
+  width: 129px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 10px;
+  margin: 10px;
+  font-family: "poppins";
+  font-weight: 600;
+}
+.header .button--white {
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s;
+}
+.header .button--white:hover {
+  background-color: black;
+}
+.header .button--black {
+  background-color: black;
+  color: white;
+}
+.header .button__black--nav {
+  margin: 0;
+}
+.header__piano {
+  width: 252px;
+  height: 194px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__list-item {
+  margin: 0;
+}
+
+@media (min-width: 960px) {
+  .nav {
+    margin-top: 0px 0px;
+  }
+  .nav__cart {
+    width: 120px;
+    height: 120px;
+  }
+  .nav section {
+    width: 300px;
+  }
+  .nav__list {
+    display: flex;
+    list-style-type: none;
+    flex-flow: row wrap;
+    position: relative;
     justify-content: center;
-    
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .nav__list .button {
+    width: 129px;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  .nav__link {
+    text-decoration: none;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header__title {
+    font-size: 56px;
+    padding: 15px;
+    font-family: "Abril Fatface", arial;
+    font-weight: 400;
+  }
+  .header__piano {
+    text-align: center;
+    width: 589px;
+    height: 454px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 959px) {
+  .nav__list {
+    display: none;
+  }
+  .contact .form__input {
+    width: 100% !important;
+  }
+  form .div__container {
+    flex-direction: column !important;
+  }
+}
+form .div__container {
+  flex-direction: row;
 }
 
-nav{
-    background-color: white;
+form .div__container--big {
+  width: 100%;
 }
 
-.container {
-    width: 320px;;
-    height: 8000px;
-    display:flex;
-    
-    
+form div {
+  display: flex;
+  flex-direction: column;
 }
 
-.icon {
-
+.nav__link {
+  margin: 0 20px;
 }
 
-.main {
-    background-color: white;
-
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.main__slogan {
-    font-size: 15px;
-    color:gray;
-    align-content: center;
-
+.contact {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url(../assets/Contactanos.png);
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
 }
+.contact .title--black {
+  font-weight: 400;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  font-family: "Abril Fatface", arial;
+  letter-spacing: 1.5px;
+}
+.contact--container {
+  width: 500px;
+  display: flex;
+}
+.contact .text__black {
+  width: 80%;
+}
+.contact .form {
+  width: auto;
+  padding: 0px 20px;
+}
+.contact .form__input {
+  align-items: left;
+  position: relative;
+  width: 280px;
+  height: 35px;
+  margin: 10px 0 30px 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.65);
+  border: 1px solid white;
+}
+.contact .form__input--big {
+  height: 150px;
+  margin-bottom: 20px;
+}
+.contact .form__label {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.button {
+  width: 280px;
+  height: 32px;
+  font-size: 14px;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.button--black {
+  background-color: black;
+  color: white;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 960px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(../assets/Contactanos.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+  }
+  .contact .title--black {
+    font-size: 32px;
+  }
+  .contact .text--black {
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    padding: 20px;
+    margin: 10px, 20px;
+    line-height: 18.78px;
+  }
+  .contact .form {
+    width: auto;
+    padding: 0px 20px;
+  }
+  .contact .form__input {
+    align-items: left;
+    position: relative;
+    width: 280px;
+    height: 35px;
+    margin: 10px 0 30px 0;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border: 1px solid white;
+    width: 100%;
+  }
+  .contact .form__input--big {
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  .contact .form__label {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+  }
+  .button {
+    width: 280px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 10px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .button--black {
+    background-color: black;
+    color: white;
+    margin-bottom: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

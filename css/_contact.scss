@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url(../assets/Contactanos.png);
+  background-position-x:center;
+    background-position-y:center;
+    background-repeat: no-repeat;
+
+  .title {
+    &--black {
+      font-weight: 400;
+      text-align: center;
+      font-size: 24px;
+      padding: 10px;
+      font-family: "Abril Fatface", arial;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  &--container{
+    width:500px;
+    display: flex;
+  }
+
+   .text{
+    &__black{
+        width:80%;
+    }
+   }
+
+  .form {
+    width: auto;
+    padding: 0px 20px;
+
+    &__input {
+      align-items: left;
+      position: relative;
+      width: 280px;
+      height: 35px;
+      margin: 10px 0 30px 0;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.65);
+      border: 1px solid white;
+
+      &--big{
+            height: 150px;
+            margin-bottom: 20px;
+      }
+    }
+
+    &__label {
+      font-size: 16px;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+    }
+  }
+}
+
+.button {
+  width: 280px;
+  height: 32px;
+  font-size: 14px;
+  border-radius: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  
+  
+ 
+}
+
+.button--black {
+  background-color: black;
+  color: white;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 960px) {
+    
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(../assets/Contactanos.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin:0;
+  
+    .title {
+      &--black {
+        font-size: 32px;   
+  
+      }
+    }
+  
+    .text {
+      &--black {
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        padding: 20px;
+        margin: 10px, 20px;
+        line-height: 18.78px;
+      }
+    }
+  
+    .form {
+      width: auto;
+      padding: 0px 20px;
+  
+      &__input {
+        align-items: left;
+        position: relative;
+        width: 280px;
+        height: 35px;
+        margin: 10px 0 30px 0;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.65);
+        border: 1px solid white;
+        width: 100%;
+  
+        &--big{
+              height: 150px;
+              margin-bottom: 20px;
+        }
+      }
+  
+      &__label {
+        font-size: 16px;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+      }
+    }
+  }
+  
+  .button {
+    width: 280px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 10px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+    
+   
+  }
+  
+  .button--black {
+    background-color: black;
+    color: white;
+    margin-bottom: 50px;
+  }
+
+}
+
