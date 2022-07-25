@@ -10,17 +10,22 @@ body {
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
   margin: 30px;
   height: 80px;
 
   &__cart {
     margin-right: 0px;
+    margin-top: 16px;
     position: relative;
-    bottom: 20px;
+    /* bottom: 20px; */
     width: 90px;
     height: 90px;
+  }
+  .button__black--nav {
+    background-color: black;
+    color:white;
   }
 
   /* &__list {
@@ -74,10 +79,7 @@ body {
     color: white;
   }
 
-  .button__black--nav {
-    margin:0;
-  }
-
+  
   &__piano {
     width: 252px;
     height: 194px;
@@ -94,8 +96,8 @@ body {
     margin-top: 0px 0px;
 
     &__cart {
-      width: 120px;
-      height: 120px;
+      width: 99px;
+      height: 99px;
     }
 
     section{
@@ -107,11 +109,12 @@ body {
       list-style-type: none;
       flex-flow: row wrap;
       position: relative;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       font-family: "Raleway", sans-serif;
       font-size: 14px;
       font-weight: 600;
+      flex-grow: 1;
 
       .button {
         width: 129px;
@@ -147,28 +150,17 @@ body {
 }
 
 
-@media (max-width: 959px) {
-    .nav {
-        &__list {
-            display: none;
-        }
-    }
-    .contact .form__input {
-        width: 100% !important;
-    }
-    
-    form .div__container{
-        flex-direction: column !important;
-    }
-
-}
 
 form .div__container{
     flex-direction: row;
 }
 
+form .button{
+    width: 100%;
+}
+
 form .div__container--big{
-    width: 100%
+    width: 100%;
 }
 
 
@@ -178,4 +170,23 @@ form div {
 }
 .nav__link{
     margin: 0 20px;
+}
+
+
+@media (max-width: 959px) {
+  .nav {
+      &__list {
+          display: none;
+      }
+  }
+
+  .contact .form__input {
+      width: 100% !important;
+
+  }
+  
+  form .div__container{
+      flex-direction: column !important;
+  }
+
 }
