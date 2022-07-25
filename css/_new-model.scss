@@ -1,1 +1,204 @@
 @use "variables";
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.new-model{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+    padding-bottom: 70px;
+
+    &__header{
+        position: relative;
+        height: 400px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .title{
+        // font-weight: 400;
+        text-align: center;
+        letter-spacing: 2px;
+
+        &--black{
+            font-size: 22px;
+            font-weight: 700;
+            padding: 8px 20px;
+        }
+
+        &--white{
+            color: white;
+            font-family: 'Abril Fatface';
+            font-weight: lighter;
+            font-size: 22px;
+        }
+
+        &--white:first-of-type{
+            padding-top: 30px;
+        }
+    }
+
+    &__img{
+        position:absolute;
+        top: 170px;
+        // transform: scale(1.3);
+        &--leafs{
+            transform: translateX(20px);
+        }
+        &--vector{
+            transform: translateX(20px);
+        }
+    }
+
+
+    &__vid{
+        height: 125%;
+        width: 125%;
+        top: 0;
+        left: 0;
+        opacity: .5;
+        position: absolute;
+        object-fit: cover;
+        -webkit-mask-image: -webkit-gradient(linear, left 90%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))        
+    }
+
+    &__container{
+        position: relative;
+    }
+
+    &__rate{
+        font-family: 'Raleway';
+        font-weight: 500;
+        color:white;
+        padding: 20px 0;
+        text-align: center;
+    }    
+
+    .text{
+        font-family: 'Raleway';
+        text-align: center;
+        padding: 30px 20px;
+        font-size: 18px;
+        font-weight: lighter;
+        line-height: 25px;
+
+        &--white{
+            color:white;
+        }
+    }
+
+    .description{
+        font-family: 'Raleway';
+        padding-bottom: 45px;
+        padding-top:15px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 12px;
+        &--white{
+            color: white;
+        }
+    }
+
+    &__container{
+        text-align: center;
+    }
+    .button{
+        height: 40px;
+        width: 234px;
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 2px;
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+        // margin-bottom: 90px;
+    }
+}
+
+/*MEDIA QUERIE 1024PX*/
+@media (min-width: 1024px) {
+    .new-model{
+        height: 700px;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-start;
+        
+        &__header{
+            height: 700px;
+            width: 100vw;
+            position: absolute;
+        }
+
+        .title{
+            &--black{
+                padding: 0 300px;
+                font-size:36px;
+                font-weight: 300;
+            }
+
+            &--white{
+                text-align: left;
+                margin:20px 0;
+                font-weight: lighter;
+            }
+        }
+
+        &__img{
+            transform: scale(1.6);
+            left: 60%;
+            top: 45%;
+            &--vector{
+                transform: translateX(70px) scale(1.6);
+            }
+            &--leafs{
+                transform: translateX(40px) scale(1.6);
+            }
+        }
+
+        &__vid{
+            position: absolute;
+            object-fit: fit;
+            opacity: .9;
+            z-index: -1;
+            top: 50px;
+        }
+
+        &__container{
+            position:absolute;
+            width: 420px;
+            padding-left: 50px;
+            text-align: left;
+        }
+
+        .text{
+            padding: 0;
+            font-size: 20px;
+            text-align: left;
+            line-height: 28px;
+            font-weight: lighter;
+        }
+
+        &__rate{
+            text-align: left;
+            padding: 0;
+            font-size: 15px;
+        }
+
+        &__description{
+            text-align: left;
+        }
+
+        .button{
+            left:40%;
+        }
+        
+
+    }
+}
