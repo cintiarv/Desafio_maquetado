@@ -309,7 +309,7 @@
   box-shadow: #FFBA60 0px 0px 0.1px, #FFBA60 0px 0px 8px;
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 1024px) {
   .gallery {
     flex-direction: column;
   }
@@ -377,11 +377,6 @@
   z-index: -1;
   background: white;
   background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.35) 100%);
-}
-.contact .contact__image {
-  width: auto;
-  height: auto;
-  justify-content: center;
 }
 .contact .title--black {
   font-size: 32px;
