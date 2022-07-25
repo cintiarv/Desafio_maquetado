@@ -1,50 +1,89 @@
 @use "variables";
 
-.partners{
-    display: flex;
+.partners {
+    display: flex ;
     flex-direction: column;
-    background: rgb(111,111,111);
+    align-items: center;
+    padding: 20px;
     background: linear-gradient(180deg, rgba(214,214,214,1) 0%, rgba(255,255,255,0.43) 100%);
+    width: 100%;
+    justify-content: center;
 
     .title--black{
-        font-size: 32px;
+        font-size: 20px;
         text-align: center;
         font-weight: 400;
-        margin: 50px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
-    .partner{
+    .partner {
         display: flex;
-        font-size: 32px;
         flex-direction: row;
-        align-items:center ;
-        justify-content: space-between;
-        background-color: black;
+        /*justify-content: space-between;*/
         border-radius: 55px 10px 10px 55px;
-        padding: 10px;
-        padding-right: 90px;
-        margin: 10px;
-        color: white;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
+        height: 65px;
+        margin: 20px;
+        padding: 10px 0;
+        padding-right: 50px;
+        background: black;  
     }
 
-    .partner--right{
-        display: flex;
-        font-size: 32px;
-        flex-direction: row;
-        align-items:center;
-        justify-content: space-between;
-        background-color: black;
-        border-radius: 10px 55px 55px 10px;
-        padding: 10px;
-        padding-left: 60px;
-        margin: 20px;
+    .partner__title {
+        justify-content: center;
+        text-transform: uppercase;
         color: white;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
-        .partner__img{
-            order: 2;
-        }
+        font-family: 'Raleway';
+        font-style:normal;
+        font-size: 20px;
+        text-align: center;
     }
+
+    .partner--bookpa {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        border-radius: 10px 55px 55px 10px; 
+        padding: 10px 0;
+        padding-left: 50px;
+    }
+
+    .partner__desktop {
+        display: none;
+    }
+
+    @media (min-width: 960px) {
+
+        .partner__desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 55px 10px 10px 55px;
+            height: 65px;
+            margin: 20px;
+            padding: 10px 0;
+            padding-right: 50px;
+        }
+
+        .partner__desktop--round {
+            border-radius: 55px 55px;
+
+        }
+
+        
+
+
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+

@@ -134,6 +134,7 @@
     .button:hover{
         transition: 0.3s;
         background-color: hsla(0, 0%, 0%, 0.75);
+
     }
 
     .button:active{
@@ -196,6 +197,7 @@
             position: relative;
             left: 20px;
 
+
             bottom: 135px;
         }
 
@@ -203,6 +205,7 @@
             position: relative;
             bottom: 135px;
         }
+
         .card__title{
             margin-top: -130px;
         }
@@ -211,6 +214,6 @@
             margin-top: 100px;
         }
     }
-     
-    
-  }
+
+}   
+
