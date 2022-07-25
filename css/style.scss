@@ -1,10 +1,10 @@
 
 @use "variables.scss";
-@use 'nav';
+@use 'nav.scss';
 
 @use "new-model.scss";
 @use "gallery.scss";
-@use 'contact';
+@use 'contact.scss';
 @use "partners.scss";
 @use "footer.scss";
 
@@ -17,3 +17,4 @@
     font-family: 'Abril Fatface', cursive;
     font-weight: 400;
 }
+

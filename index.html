@@ -52,30 +52,31 @@
 
     <!-- Sección de héctor -->
     <section class="new-model">
-
+      <header class="new-model__header">
+        <video autoplay muted loop class="new-model__vid">
+          <source src="./assets/playing-video.mp4" type="video/mp4" />
+        </video>
         <h2 class="title title--black">Conoce nuestro nuevo modelo en clase</h2>
-        <div class="new-model__background">
-          <video class="new-model__video" src="./assets/playing-video.mp4" autoplay loop></video>
-        </div>
-        <img class="new-model__img" src="./assets/piano-ebony.svg" alt="" />
-        <h2 class="title title--ebony">Nuevo Ebony F228</h2>
-        <div class="new-model__stars">
-          <p class="new-model__rate">
-            Valoración:
-          </p>
-          <img class="new-model__stars-icon" src="./assets/stars.svg" alt="" >  
-        </div>
-      <h2 class="title title--price">Desde: $110,000.00</h2>
-      <p class="text text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quo praesentium temporibus eos eius aut odio veritatis at ut, accusantium culpa quasi quidem repudiandae voluptatibus similique amet facilis commodi dicta?</p>
-      <ul class="list">
-        <li class="list list--element">Nuevo</li>
-        <li class="list list--element">● 2021</li>
-        <li class="list list--element">● Acústico</li>
-        <li class="list list--element">● M.Cedro</li>
-      </ul>
-      <button class="button button--black">Agregar al carrito</button>
-      </section>
-
+        <img class="new-model__img " src="./assets/piano-ebony.svg" alt="" />
+      </header>
+      <div class="new-model__container">
+        <h2 class="title title--white">Nuevo Ebony F228</h2>
+        <p class="new-model__rate">Valoración: ⭐⭐⭐⭐⭐</p>
+        <h2 class="title title--white">Desde: $110,000.00</h2>
+        <p class="text text--white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <br />
+          Aliquet donec purus egestas 
+          mattis non orci. Tellus id viverra id
+          egestas. Quis enim, mauris velit feugiat vestibulum adipiscing
+          elementum gravida. Egestas felis pellentesque vitae sed.
+        </p>
+        <p class="description description--white">
+          Nuevo ● 2021 ● Acús... ● M.Cedro
+        </p>
+        <button class="button button--black">Agregar al carrito</button>
+      </div>
+    </section>
     <!-- Sección de rodri -->
     <section class="gallery">
 
@@ -140,95 +141,150 @@
       <button class="button button--black">Ver más</button>
     </section>    
 
-      <!-- Sección de cin -->
-    <section class="contact"> 
-      <h2 class="title title--black">Contáctanos</h2>
-      <p class="text text--black ">¿Quieres educarte formalmente en este instrumento? Toca más rápido, logra mayor fluidez en las composiciones complejas. Contactános para conocer tus objetivos.</p>
-      <div class="contact__background">
-        <img class="contact__image" src="./assets/background.png" alt="">  
+<!-- Sección de cin -->
+<section class="contact">
+  <h2 class="title title--black">Contáctanos</h2>
+    <p class="text text--black">
+      ¿Quieres educarte formalmente en este instrumento? Toca más rápido,
+      logra mayor fluidez en las composiciones complejas. Contactános para
+      conocer tus objetivos.
+    </p>
+  <form class="form" action="">
+    <div>
+      <label class="form__label" for="">Nombre</label>
+      <input class="form__input" type="name" name="" id="" />
+    </div>
+    <div class="div__container">
+      <div class="div__container--big">
+        <label class="form__label" for="">Teléfono</label>
+        <input class="form__input" type="tel" name="" id="" />
       </div>
-      <form class="form" action="">
-        <label class="form__input" for="">Nombre</label>
-        <input class="textarea" type="name" name="" id="">
-        <label class="form__input" for="">Teléfono</label>
-        <input class="textarea" type="tel" name="" id="">
-        <label class="form__input" for="">Email</label>
-        <input class="textarea" type="email" name="" id="">
-        <label class="form__input" for="message">Cuéntanos más</label><br />
-          <textarea class="textarea--big"
-            cols="80"
-            rows="8"
-            required
-          ></textarea>
-        <input class="button button--black" type="submit" value="Enviar" />
-      </form>
-    </section>
+
+      <div  class="div__container--big">
+        <label class="form__label" for="">Email</label
+        ><input class="form__input" type="email" name="" id="" />
+      </div>
+    </div>
+    <label class="form__label" for="message">Cuéntanos más</label><br />
+    <input
+      class="form__input form__input--big"
+      type="email"
+      name=""
+      id=""
+    />
+
+    <button class="button button--black">Enviar</button>
+  </form>
+</section>
 
       <!-- Sección de annie -->
-    <section class="partners">
-      <h2 class="title title--black">
-        Conoce a nuestros partners. 
-      </h2>
+      <section class="partners">
+        <h2 class="title title--black">
+          Conoce a nuestros partners. 
+        </h2>
+        
+        <div class="partners__first-row">
+          <article class="partner">
+            <img class="partner__img" src="./annie-images/petrof.svg" alt="">
+            <h3 class="partner__title">
+              Petrof
+            </h3>
+          </article>
+    
+          <article class="partner partner--bookpa">
+            <img class="partner__img" src="./annie-images/bookpa.svg" alt="">
+            <h3 class="partner__title">
+              BookPa
+            </h3>
+          </article>
+        </div>
 
-      <article class="partner">
-        <img class="partner__img" src="./assets/petrov.svg" alt="">
-        <h3 class="partner__title">
-          Petrov
-        </h3>
-      </article>
+        <div class="partners__second-row">
+          <article class="partner">
+            <img class="partner__img" src="./annie-images/pafma.svg" alt="">
+            <h3 class="partner__title">
+              Piafmar
+            </h3>
+          </article>
+    
+          <article class="partner partner__desktop--round">
+            <img class="partner__img" src="./annie-images/parispian.svg" alt="">
+            <h3 class="partner__title">
+              Parispian
+            </h3>
+          </article>
+    
+          <article class="partner partner__desktop--round">
+            <img class="partner__img" src="./annie-images/hefilti.svg" alt="">
+            <h3 class="partner__title">
+              Hefilti
+            </h3>
+          </article>
+        </div>
 
-      <article class="partner--right">
-        <img class="partner__img" src="./assets/bookpa.svg" alt="">
-        <h3 class="partner__title">
-          BookPa
-        </h3>
-      </article>
-
-      <article class="partner">
-        <img class="partner__img" src="./assets/piafmar.svg" alt="">
-        <h3 class="partner__title">
-          PiafMar
-        </h3>
-      </article>
-    </section>
+        <div class="partners__third-row">
+          <article class="partner partner__desktop--round">
+            <img class="partner__img" src="./annie-images/Yamaha.svg" alt="">
+            <h3 class="partner__title">
+              Yamaha
+            </h3>
+          </article>
+    
+          <article class="partner partner__desktop--round">
+            <img class="partner__img" src="./annie-images/pianotwo.svg" alt="">
+            <h3 class="partner__title">
+              Pianotwo
+            </h3>
+          </article>
+        </div>
+  
+      </section>
 
     <!-- Sección de annie -->
     <footer class="footer">
-      <img class="pazioli" src="./assets/pazioli2.svg" alt="">
-      <section class="icons">
-      <img class="icons__img" src="./assets/facebook.svg" alt="">
-      <img class="icons__img" src="./assets/twitter.svg" alt="">
-      <img class="icons__img" src="./assets/linkedin.svg" alt="">
-      </section>
 
-      <h4 class="footer__header">
-        Nosotros
-      </h4>
+      <div class="footer__content">
 
-      <ul class="footer__list">
-        <li class="list-item"><a class="list-item--anchor" href="">Home</a></li>
-        <li class="list-item"><a class="list-item--anchor" href="">Nuevo</a></li>
-        <li class="list-item"><a class="list-item--anchor" href="">Pianos</a></li>
-        <li class="list-item"><a class="list-item--anchor" href="">Conoce nuestros cursos</a></li>
-      </ul>
+        <img class="pazioli" src="./assets/pazioli2.svg" alt="">
+        <section class="icons">
+        <a class="icons__anchor" href="#">
+          <img class="icons__img" src="./assets/facebook.svg" alt="">
+        </a>
+        <a class="icons__anchor" href="#">
+          <img class="icons__img" src="./assets/twitter.svg" alt="">
+        </a>
+        <a class="icons__anchor" href="#">
+          <img class="icons__img" src="./assets/linkedin.svg" alt="">
+        </a>
+        </section>
 
-      <h4 class="footer__header">
-        Contáctanos
-      </h4>
 
-      <p class="footer__address">México <br> Tonalá 10, Roma Nte., Cuauhtémoc,<br>03800 Ciudad de México, CDMX.</p>
-      <p class="footer__copyright">© Pazioli 2021, todos los derechos reservados.</p>
-      <p class="footer__powered">Powered with ❤️ by<br>
+      <div class="footer__nosotros">
+        <h4 class="footer__header">
+          Nosotros
+        </h4>
+  
+        <ul class="footer__list">
+          <li class="list-item"><a class="list-item--anchor" href="">Home</a></li>
+          <li class="list-item"><a class="list-item--anchor" href="">Nuevo</a></li>
+          <li class="list-item"><a class="list-item--anchor" href="">Pianos</a></li>
+          <li class="list-item"><a class="list-item--anchor" href="">Conoce nuestros cursos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contactanos">
+        <h4 class="footer__header">
+          Contáctanos
+        </h4>
+  
+        <p class="footer__address">México <br> Tonalá 10, Roma Nte., Cuauhtémoc,<br>03800 Ciudad de México, CDMX.</p>
+        <p class="footer__copyright">© Pazioli 2021, todos los derechos reservados.</p>  
+      </div>
+
+      </div>
+        <p class="footer__powered">Powered with ❤️ by<br>
         DevKoore</p>
     </footer>
 
-      <p class="footer__address">
-        México Tonalá 10, Roma Nte., Cuauhtémoc, 03800 Ciudad de México, CDMX.
-      </p>
-      <p class="footer__copyright">
-        © Pazioli 2021, todos los derechos reservados.
-      </p>
-      <p class="footer__powered">Powered with ♥ by DevKoore</p>
-    </footer>
   </body>
 </html>

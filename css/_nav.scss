@@ -22,12 +22,30 @@ body {
   .button__black--nav {
     background-color: black;
     color:white;
+    border-style: none;
+    transition: 0.3s;
   }
 
-  /* &__list {
-    display: none;
-  } */
+  .button:hover{
+    transition: 0.3s;
+    background-color: hsla(0, 0%, 0%, 0.75);
+  }
+
 }
+
+.button:active{
+  transition: 0.3s;
+  background-color: black;
+  box-shadow: #FFBA60 0px 0px 0.1px, #FFBA60 0px 0px 8px;        
+}
+
+.button--white:active{
+  transition: 0.3s;
+  background-color: white;
+  box-shadow: #FFBA60 0px 0px 0.1px, #FFBA60 0px 0px 8px;        
+}
+
+
 
 .header {
   background-color: #ffffff;
@@ -55,8 +73,11 @@ body {
     font-size: 14px;
     border-radius: 10px;
     margin: 10px;
-    font-family: "poppins";
+    font-family: 'Raleway', sans-serif;
     font-weight: 600;
+    border-style: solid;
+    border-color: black;
+    transition: 0.3s;
   }
   .button--white {
     background-color: white;
@@ -67,18 +88,45 @@ body {
     background-color: black ;
   }
 
-
-  
-
   .button--black {
     background-color: black;
     color: white;
+    border: none;
+
   }
+
+  .button:hover{
+    transition: 0.3s;
+    background-color: hsla(0, 0%, 0%, 0.75);
+  }
+
+  .button--white:hover{
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;        
+    transition: 0.3s;
+    .button--bold-text{
+        background-color: white;
+        box-shadow: none;
+    }
+}
+
+.button:active{
+  transition: 0.3s;
+  background-color: black;
+  box-shadow: #FFBA60 0px 0px 0.1px, #FFBA60 0px 0px 8px;        
+}
+
+.button--white:active{
+  transition: 0.3s;
+  background-color: white;
+  box-shadow: #FFBA60 0px 0px 0.1px, #FFBA60 0px 0px 8px;        
+}
+
 
   
   &__piano {
-    width: 252px;
-    height: 194px;
+    width: 80%;
+    margin: 20px 0px;
     align-items: center;
     justify-content: center;
   }
@@ -87,7 +135,7 @@ body {
 .nav__list-item{
     margin: 0
 }
-@media (min-width: 960px) {
+@media (min-width: 1024px) {
   .nav {
     margin-top: 0px 0px;
 
@@ -117,10 +165,14 @@ body {
         height: 30px;
         border-radius: 10px;
         font-weight: 600;
+        border-style: solid;
+        border-color: black;
+        margin-left: 10px;
       }
     }
     &__link {
       text-decoration: none;
+      color: black;
     }
   }
 
@@ -169,7 +221,7 @@ form div {
 }
 
 
-@media (max-width: 959px) {
+@media (max-width: 1024px) {
   .nav {
       &__list {
           display: none;

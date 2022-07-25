@@ -23,10 +23,10 @@
     .card{
         background-color: white;
         padding: 20px;
-        margin: 20px;
+        margin: 10px 0;
         border-radius: 10px;
-        width: 300px;
-        height: 410px;
+        width: 90vw;
+        height: 440px;
         display: flex;
         flex-flow: column;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
@@ -70,16 +70,16 @@
             margin-top: 10px;
             margin-bottom: 15px;
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             flex-direction: row;
             justify-content: space-between;
+            line-break: loose;
+            font-size: 14px;
         }
     
         .button--white{
             font-size: 1.2rem;
             font-weight: 400;
-            width: 70%;
-            height: 45px;
             flex-grow: 3;
             border: black;
             border: 1px;
@@ -97,8 +97,13 @@
         .button--cart{
             background-color: black;
             border-radius: 10px;
+            flex-grow: 1;
             border: 0;
             padding: 10px;
+            .card__icon{
+                position: relative;
+                bottom: 40%;
+            }
         }
 
         .button--white:hover{
@@ -126,7 +131,8 @@
         font-family: 'Raleway', sans-serif;
         border-radius: 10px;
         border: 0;
-        padding: 10px 50px;
+        max-width: 50vw;
+        // padding: 10px 50px;
         font-weight: 700;
         transition: 0.3s;
     }
@@ -151,6 +157,7 @@
     .gallery{
         flex-direction: column;
 
+
         .title--black{
             font-size: 50px;
             font-weight: 400;
@@ -165,9 +172,8 @@
             justify-content: space-between;
 
             .button--white{
-                font-size: 1.25rem;
-                width: 70%;
-                height: 45px;
+                font-size: 1.2rem;
+                font-weight: 400;
                 flex-grow: 3;
                 border: black;
                 border: 1px;
@@ -175,15 +181,26 @@
                 border-radius: 10px;
                 background-color: white;
                 margin-right: 20px;
-                transition: 0.3s;
+                width: 1000px;
+            }
+            .button--cart{
+                background-color: black;
+                border-radius: 10px;
+                flex-grow: 1;
+                border: 0;
+                padding: 10px;
+                .card__icon{
+                    position: relative;
+                    bottom: 40%;
+                }
             }
         }
         .card{
             width: 310px;
             height: auto;
             margin-top: 135px;
-            margin-left: 50px;
-            margin-right: 50px;
+            margin-left: 1vw;
+            margin-right: 1vw;
             transition: 0.3s;
         }
 
@@ -212,6 +229,7 @@
 
         .button--black{
             margin-top: 100px;
+            align-items: center;
         }
     }
 
