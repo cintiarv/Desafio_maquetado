@@ -25,10 +25,10 @@
         padding: 20px;
         margin: 10px 0;
         border-radius: 10px;
-        width: 90vw;
-        height: 440px;
+        max-width: 600px;
+        height: 100%;
         display: flex;
-        flex-flow: column;
+        flex-direction: column;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
         
         .buttons{
@@ -39,8 +39,8 @@
 
         .card__img{
             margin: 10px;
-            width: 80%;
-            height: 100%;
+            width: 100%;
+            height: 90%;
         }
     
         .card__separator{

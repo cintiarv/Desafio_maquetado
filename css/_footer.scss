@@ -90,10 +90,19 @@
             top: 55vh;
             left: 95vw;
             transform: scale(1.5);
+            
+
             .icons__anchor{
                 margin: 0;
             }
             
+        }
+        .icons__anchor{
+            transition: 0.3s;
+        }
+        .icons__anchor:hover{
+            transform: scale(1.2);
+            transition: 0.3s;
         }
     }
 
