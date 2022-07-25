@@ -44,65 +44,98 @@
 
     <!-- Sección de héctor -->
     <section class="new-model">
+      <header class="new-model__header">
+        <video autoplay muted loop class="new-model__vid">
+          <source src="./assets/playing-video.mp4" type="video/mp4" />
+        </video>
         <h2 class="title title--black">Conoce nuestro nuevo modelo en clase</h2>
-        <img class="new-model__img" src="" alt="" />
-        <h2 class="title title--white">Nuevo Ebony</h2>
-        <p class="new-model__rate">
-          Valoración:
+        <img class="new-model_img new-model_img--vector" src="./assets/Vector2.png" alt="" />
+        <img class="new-model__img" src="./assets/Vector.png" alt="" />
+        <img class="new-model_img new-model_img--leafs" src="./assets/leafs.png" alt="" />
+        <img class="new-model__img" src="./assets/pixlr-bg-result (6) 2.png" alt=""/>
+      </header>
+      <div class="new-model__container">
+        <h2 class="title title--white">Nuevo Ebony F228</h2>
+        <p class="new-model__rate">Valoración: ⭐⭐⭐⭐⭐</p>
+        <h2 class="title title--white">Desde: $110,000.00</h2>
+        <p class="text text--white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <br />
+          Aliquet donec purus egestas 
+          mattis non orci. Tellus id viverra id
+          egestas. Quis enim, mauris velit feugiat vestibulum adipiscing
+          elementum gravida. Egestas felis pellentesque vitae sed.
         </p>
-        <img class="new-model__stars" src="" alt="" >
-      <h2 class="title title--white">Desde: $110,000.00</h2>
-      <p class="text text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quo praesentium temporibus eos eius aut odio veritatis at ut, accusantium culpa quasi quidem repudiandae voluptatibus similique amet facilis commodi dicta?</p>
-      <p class="description description--white">Nuevo · 2021 · Actús... · M.Cedro</p> 
-      <button class="button button--black">Agregar al carrito</button>
-      </section>
+        <p class="description description--white">
+          Nuevo · 2021 · Acús... · M.Cedro
+        </p>
+        <button class="button button--black">Agregar al carrito</button>
+      </div>
+    </section>
 
-    <!-- Sección de rodri -->
-    <section class="gallery">
+<!-- Sección de rodri -->
+<section class="gallery">
 
-      <h2 class="title title--black">¿Qué tipo de piano estás buscando?</h2>
-      
-      <article class="card">
-        <img class="card__img" src="./assets/piano-silver.png" alt="" />
-        <img class="card__separator" src="./assets/separator.svg" alt="">
-        <h3 class="card__title">The Butterfly</h3>
-        <p class="description description--black">Nuevo · 2021 · Actús... · M.Cedro</p> 
-        <div class="buttons">
-          <button class="button button--white">Desde: <span class="button button--bold-text">$ 195k mn</span></button>
-          <button class="button button--black">
-            <img class="card__icon" src="./assets/cart-icon.svg" alt="" />
-          </button>
-        </div>
-      </article>
+  <p class="title title--black">¿Qué tipo de piano estás buscando?</p>
 
-      <article class="card">
-        <img class="card__img" src="./assets/piano-gold.png" alt="" />
-        <img class="card__separator" src="./assets/separator.svg" alt="">
-        <h3 class="card__title">Golden Leaf</h3>
-        <p class="description description--black">Nuevo · 2021 · Actús... · M.Cedro</p> 
-        <div class="buttons">
-          <button class="button button--white">Desde: <span class="button button--bold-text">$ 305k mn</span></button>
-          <button class="button button--black">
-            <img class="card__icon" src="./assets/cart-icon.svg" alt="" />
-          </button>
-        </div>
-      </article>
-  
-      <article class="card">
-        <img class="card__img" src="./assets/piano-wood.png" alt="" />
-        <img class="card__separator" src="./assets/separator.svg" alt="">
-        <h3 class="card__title">Walnut Stauss</h3>
-        <p class="description description--black">Nuevo · 2021 · Actús... · M.Cedro</p> 
-        <div class="buttons">
-          <button class="button button--white">Desde: <span class="button button--bold-text">$ 125k mn </span></button>
-          <button class="button button--black">
-            <img class="card__icon" src="assets/cart-icon.svg" alt="" />
-          </button>
-        </div>
-      </article>
+  <div class="gallery__container">
+    <article class="card">
+      <img class="card__img" src="./assets/piano-silver.png" alt="" />
+      <img class="card__separator" src="./assets/separator.svg" alt="">
+      <h3 class="card__title">The Butterfly</h3>
+      <ul class="list">
+        <li class="list list--element">Nuevo</li>
+        <li class="list list--element">● 2021</li>
+        <li class="list list--element">● Acústico</li>
+        <li class="list list--element">● M.Cedro</li>
+      </ul>
+      <div class="buttons">
+        <button class="button button--white">Desde: <span class="button button--bold-text">$ 195k mn</span></button>
+        <button class="button button--cart">
+          <img class="card__icon" src="./assets/cart-icon.svg" alt="" />
+        </button>
+      </div>
+    </article>
 
-      <button class="button button--black">Ver más</button>
-    </section>    
+    <article class="card">
+      <img class="card__img" src="./assets/piano-gold.png" alt="" />
+      <img class="card__separator" src="./assets/separator.svg" alt="">
+      <h3 class="card__title">Golden Leaf</h3>
+      <ul class="list">
+        <li class="list list--element">Nuevo</li>
+        <li class="list list--element">● 2021</li>
+        <li class="list list--element">● Acústico</li>
+        <li class="list list--element">● M.Cedro</li>
+      </ul>   
+      <div class="buttons">
+        <button class="button button--white">Desde: <span class="button button--bold-text">$ 305k mn</span></button>
+        <button class="button button--cart">
+          <img class="card__icon" src="./assets/cart-icon.svg" alt="" />
+        </button>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card__img" src="./assets/piano-wood.png" alt="" />
+      <img class="card__separator" src="./assets/separator.svg" alt="">
+      <h3 class="card__title">Walnut Stauss</h3>
+      <ul class="list">
+        <li class="list list--element">Nuevo</li>
+        <li class="list list--element">● 2021</li>
+        <li class="list list--element">● Acústico</li>
+        <li class="list list--element">● M.Cedro</li>
+      </ul>  
+      <div class="buttons">
+        <button class="button button--white">Desde: <span class="button button--bold-text">$ 125k mn </span></button>
+        <button class="button button--cart">
+          <img class="card__icon" src="assets/cart-icon.svg" alt="" />
+        </button>
+      </div>
+    </article>
+  </div>
+
+  <button class="button button--black">Ver más</button>
+</section>   
 
       <!-- Sección de cin -->
     <section class="contact"> 
