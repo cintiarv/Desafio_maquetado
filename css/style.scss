@@ -1,2 +1,19 @@
-@use './nav';
-@use './contact';
+
+@use "variables.scss";
+@use 'nav';
+
+@use "new-model.scss";
+@use "gallery.scss";
+@use 'contact';
+@use "partners.scss";
+@use "footer.scss";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.title--black{
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+}

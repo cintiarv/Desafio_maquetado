@@ -5,20 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
@@ -38,11 +28,14 @@
           <a class="nav__link" href="">Soy estudiante</a>
         </li>
         <li class="nav__list-item">
+
           <button class="button button__black button__black--nav">
+
             Contáctanos
           </button>
         </li>
       </ul>
+
       <img class="nav__cart" src="./assets/carritonav.png" alt="" />
     </nav>
 
@@ -54,163 +47,180 @@
         <button class="button button--white">Adquirir piano</button>
       </div>
       <img class="header__piano" src="./assets/pianoppal.png" alt="" />
+
     </header>
 
     <!-- Sección de héctor -->
     <section class="new-model">
-      <h2 class="title title--black">Conoce nuestro nuevo modelo en clase</h2>
-      <img class="new-model__img" src="" alt="" />
-      <h2 class="title title--white">Nuevo Ebony</h2>
-      <p class="new-model__rate">Valoración:</p>
-      <img class="new-model__stars" src="" alt="" />
-      <h2 class="title title--white">Desde: $110,000.00</h2>
-      <p class="text text--white">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quo
-        praesentium temporibus eos eius aut odio veritatis at ut, accusantium
-        culpa quasi quidem repudiandae voluptatibus similique amet facilis
-        commodi dicta?
-      </p>
-      <p class="description description--white">
-        Nuevo · 2021 · Actús... · M.Cedro
-      </p>
+
+        <h2 class="title title--black">Conoce nuestro nuevo modelo en clase</h2>
+        <div class="new-model__background">
+          <video class="new-model__video" src="./assets/playing-video.mp4" autoplay loop></video>
+        </div>
+        <img class="new-model__img" src="./assets/piano-ebony.svg" alt="" />
+        <h2 class="title title--ebony">Nuevo Ebony F228</h2>
+        <div class="new-model__stars">
+          <p class="new-model__rate">
+            Valoración:
+          </p>
+          <img class="new-model__stars-icon" src="./assets/stars.svg" alt="" >  
+        </div>
+      <h2 class="title title--price">Desde: $110,000.00</h2>
+      <p class="text text--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quo praesentium temporibus eos eius aut odio veritatis at ut, accusantium culpa quasi quidem repudiandae voluptatibus similique amet facilis commodi dicta?</p>
+      <ul class="list">
+        <li class="list list--element">Nuevo</li>
+        <li class="list list--element">● 2021</li>
+        <li class="list list--element">● Acústico</li>
+        <li class="list list--element">● M.Cedro</li>
+      </ul>
       <button class="button button--black">Agregar al carrito</button>
-    </section>
+      </section>
 
     <!-- Sección de rodri -->
     <section class="gallery">
-      <h2 class="title title--black">¿Qué tipo de piano estás buscando?</h2>
 
-      <article class="card">
-        <img class="card__img" src="./assets/piano-silver.png" alt="" />
-        <img class="card__separator" src="./assets/separator.svg" alt="" />
-        <h3 class="card__title">The Butterfly</h3>
-        <p class="description description--black">
-          Nuevo · 2021 · Actús... · M.Cedro
-        </p>
-        <div class="buttons">
-          <button class="button button--white">
-            Desde: <span class="button button--bold-text">$ 195k mn</span>
-          </button>
-          <button class="button button--black">
-            <img class="card__icon" src="./assets/cart-icon.svg" alt="" />
-          </button>
-        </div>
-      </article>
+      <p class="title title--black">¿Qué tipo de piano estás buscando?</p>
 
-      <article class="card">
-        <img class="card__img" src="./assets/piano-gold.png" alt="" />
-        <img class="card__separator" src="./assets/separator.svg" alt="" />
-        <h3 class="card__title">Golden Leaf</h3>
-        <p class="description description--black">
-          Nuevo · 2021 · Actús... · M.Cedro
-        </p>
-        <div class="buttons">
-          <button class="button button--white">
-            Desde: <span class="button button--bold-text">$ 305k mn</span>
-          </button>
-          <button class="button button--black">
-            <img class="card__icon" src="./assets/cart-icon.svg" alt="" />
-          </button>
-        </div>
-      </article>
-
-      <article class="card">
-        <img class="card__img" src="./assets/piano-wood.png" alt="" />
-        <img class="card__separator" src="./assets/separator.svg" alt="" />
-        <h3 class="card__title">Walnut Stauss</h3>
-        <p class="description description--black">
-          Nuevo · 2021 · Actús... · M.Cedro
-        </p>
-        <div class="buttons">
-          <button class="button button--white">
-            Desde: <span class="button button--bold-text">$ 125k mn </span>
-          </button>
-          <button class="button button--black">
-            <img class="card__icon" src="assets/cart-icon.svg" alt="" />
-          </button>
-        </div>
-      </article>
+      <div class="gallery__container">
+        <article class="card">
+          <img class="card__img" src="./assets/piano-silver.png" alt="" />
+          <img class="card__separator" src="./assets/separator.svg" alt="">
+          <h3 class="card__title">The Butterfly</h3>
+          <ul class="list">
+            <li class="list list--element">Nuevo</li>
+            <li class="list list--element">● 2021</li>
+            <li class="list list--element">● Acústico</li>
+            <li class="list list--element">● M.Cedro</li>
+          </ul>
+          <div class="buttons">
+            <button class="button button--white">Desde: <span class="button button--bold-text">$ 195k mn</span></button>
+            <button class="button button--cart">
+              <img class="card__icon" src="./assets/cart-icon.svg" alt="" />
+            </button>
+          </div>
+        </article>
+  
+        <article class="card">
+          <img class="card__img" src="./assets/piano-gold.png" alt="" />
+          <img class="card__separator" src="./assets/separator.svg" alt="">
+          <h3 class="card__title">Golden Leaf</h3>
+          <ul class="list">
+            <li class="list list--element">Nuevo</li>
+            <li class="list list--element">● 2021</li>
+            <li class="list list--element">● Acústico</li>
+            <li class="list list--element">● M.Cedro</li>
+          </ul>   
+          <div class="buttons">
+            <button class="button button--white">Desde: <span class="button button--bold-text">$ 305k mn</span></button>
+            <button class="button button--cart">
+              <img class="card__icon" src="./assets/cart-icon.svg" alt="" />
+            </button>
+          </div>
+        </article>
+    
+        <article class="card">
+          <img class="card__img" src="./assets/piano-wood.png" alt="" />
+          <img class="card__separator" src="./assets/separator.svg" alt="">
+          <h3 class="card__title">Walnut Stauss</h3>
+          <ul class="list">
+            <li class="list list--element">Nuevo</li>
+            <li class="list list--element">● 2021</li>
+            <li class="list list--element">● Acústico</li>
+            <li class="list list--element">● M.Cedro</li>
+          </ul>  
+          <div class="buttons">
+            <button class="button button--white">Desde: <span class="button button--bold-text">$ 125k mn </span></button>
+            <button class="button button--cart">
+              <img class="card__icon" src="assets/cart-icon.svg" alt="" />
+            </button>
+          </div>
+        </article>
+      </div>
 
       <button class="button button--black">Ver más</button>
-    </section>
+    </section>    
 
-    <!-- Sección de cin -->
-    <section class="contact">
+      <!-- Sección de cin -->
+    <section class="contact"> 
       <h2 class="title title--black">Contáctanos</h2>
-      <div class="contact--container">
-        <p class="text text--black">
-          ¿Quieres educarte formalmente en este instrumento? Toca más rápido,
-          logra mayor fluidez en las composiciones complejas. Contactános para
-          conocer tus objetivos.
-        </p>
+      <p class="text text--black ">¿Quieres educarte formalmente en este instrumento? Toca más rápido, logra mayor fluidez en las composiciones complejas. Contactános para conocer tus objetivos.</p>
+      <div class="contact__background">
+        <img class="contact__image" src="./assets/background.png" alt="">  
       </div>
       <form class="form" action="">
-        <div>
-          <label class="form__label" for="">Nombre</label>
-          <input class="form__input" type="name" name="" id="" />
-        </div>
-        <div class="div__container">
-          <div class="div__container--big">
-            <label class="form__label" for="">Teléfono</label>
-            <input class="form__input" type="tel" name="" id="" />
-          </div>
-
-          <div  class="div__container--big">
-            <label class="form__label" for="">Email</label
-            ><input class="form__input" type="email" name="" id="" />
-          </div>
-        </div>
-        <label class="form__label" for="message">Cuéntanos más</label><br />
-        <input
-          class="form__input form__input--big"
-          type="email"
-          name=""
-          id=""
-        />
-
-        <button class="button button--black">Enviar</button>
+        <label class="form__input" for="">Nombre</label>
+        <input class="textarea" type="name" name="" id="">
+        <label class="form__input" for="">Teléfono</label>
+        <input class="textarea" type="tel" name="" id="">
+        <label class="form__input" for="">Email</label>
+        <input class="textarea" type="email" name="" id="">
+        <label class="form__input" for="message">Cuéntanos más</label><br />
+          <textarea class="textarea--big"
+            cols="80"
+            rows="8"
+            required
+          ></textarea>
+        <input class="button button--black" type="submit" value="Enviar" />
       </form>
     </section>
 
-    <!-- Sección de annie -->
+      <!-- Sección de annie -->
     <section class="partners">
-      <h2 class="title title--black">Conoce a nuestros partners.</h2>
+      <h2 class="title title--black">
+        Conoce a nuestros partners. 
+      </h2>
 
       <article class="partner">
-        <img class="partner__img" src="" alt="" />
-        <h3 class="partner__title">Petrov</h3>
+        <img class="partner__img" src="./assets/petrov.svg" alt="">
+        <h3 class="partner__title">
+          Petrov
+        </h3>
+      </article>
+
+      <article class="partner--right">
+        <img class="partner__img" src="./assets/bookpa.svg" alt="">
+        <h3 class="partner__title">
+          BookPa
+        </h3>
       </article>
 
       <article class="partner">
-        <img class="partner__img" src="" alt="" />
-        <h3 class="partner__title">BookPa</h3>
-      </article>
-
-      <article class="partner">
-        <img class="partner__img" src="" alt="" />
-        <h3 class="partner__title">Petrov</h3>
+        <img class="partner__img" src="./assets/piafmar.svg" alt="">
+        <h3 class="partner__title">
+          PiafMar
+        </h3>
       </article>
     </section>
 
     <!-- Sección de annie -->
     <footer class="footer">
-      <img class="pazioli" src="" alt="" />
+      <img class="pazioli" src="./assets/pazioli2.svg" alt="">
       <section class="icons">
-        <img class="icons__img" src="" alt="" />
-        <img class="icons__img" src="" alt="" />
-        <img class="icons__img" src="" alt="" />
+      <img class="icons__img" src="./assets/facebook.svg" alt="">
+      <img class="icons__img" src="./assets/twitter.svg" alt="">
+      <img class="icons__img" src="./assets/linkedin.svg" alt="">
       </section>
 
-      <h4 class="footer__header">Nosotros</h4>
+      <h4 class="footer__header">
+        Nosotros
+      </h4>
 
       <ul class="footer__list">
-        <li><a href="">Home</a></li>
-        <li><a href="">Nuevo</a></li>
-        <li><a href="">Pianos</a></li>
-        <li><a href="">Conoce nuestros cursos</a></li>
+        <li class="list-item"><a class="list-item--anchor" href="">Home</a></li>
+        <li class="list-item"><a class="list-item--anchor" href="">Nuevo</a></li>
+        <li class="list-item"><a class="list-item--anchor" href="">Pianos</a></li>
+        <li class="list-item"><a class="list-item--anchor" href="">Conoce nuestros cursos</a></li>
       </ul>
 
-      <h4 class="footer__header">Contáctanos</h4>
+      <h4 class="footer__header">
+        Contáctanos
+      </h4>
+
+      <p class="footer__address">México <br> Tonalá 10, Roma Nte., Cuauhtémoc,<br>03800 Ciudad de México, CDMX.</p>
+      <p class="footer__copyright">© Pazioli 2021, todos los derechos reservados.</p>
+      <p class="footer__powered">Powered with ❤️ by<br>
+        DevKoore</p>
+    </footer>
 
       <p class="footer__address">
         México Tonalá 10, Roma Nte., Cuauhtémoc, 03800 Ciudad de México, CDMX.
