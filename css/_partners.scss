@@ -8,6 +8,7 @@
     background: linear-gradient(180deg, #6F6F6F 1.72%, #FFFFFF 98.63%);
     width: 100%;
     justify-content: center;
+    overflow: scroll;
 
     .title--black{
         font-size: 24px;
@@ -65,8 +66,8 @@
         }
     }
 
-    .partner__desktop--round{
-        display: none;
+     .partner__desktop--round{
+         display: none;
     }
 
 }
